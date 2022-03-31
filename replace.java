@@ -1,10 +1,14 @@
-import java.util.Scanner;
-
 public class replace {
 
     public static void main(String[] args) {
-        Scanner s = new Scanner(System.in);
-        String str = "I am always ready to learn although I do not always like being taught.";
-        System.out.println(str.replace('a','$'));
+        String str = "To test this string";
+        String s = "";
+        str = str.toLowerCase();
+        for(int i=0;i<str.length();i++)
+        {
+            if(str.charAt(i) != 't')
+                s = s + str.charAt(i);
+        }
+        System.out.println(s);
     }
 }
